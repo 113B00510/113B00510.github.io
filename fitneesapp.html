@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創新減肥產品App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        .features, .testimonial {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature, .testimonial-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .feature img, .testimonial-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .feature img[data-loaded="true"], 
+        .testimonial-item img[data-loaded="true"] {
+            opacity: 1;
+            transform: scale(1);
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        .cta-button {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            background-color: #e68900;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>創新減肥產品App</h1>
+    <p>您的健康，您的選擇</p>
+</header>
+
+<nav>
+    <a href="#introduction">產品介紹</a>
+    <a href="#features">功能</a>
+    <a href="#feedback">使用者反饋</a>
+    <a href="#cta">立即體驗</a>
+</nav>
+
+<section id="introduction">
+    <h2>產品介紹</h2>
+    <p>我們的減肥產品提供綜合解決方案，包括智能飲食輔助系統、可穿戴減肥設備及智能輔助食品，讓您輕鬆健康地達成減重目標。</p>
+</section>
+
+<section id="features" class="features">
+    <h2>功能介紹</h2>
+    <div class="feature">
+        <h3>智能飲食輔助系統</h3>
+        <img src="https://via.placeholder.com/300x200" alt="智能飲食輔助系統" onload="this.setAttribute('data-loaded', 'true')">
+        <p>根據您的身體狀況，提供個性化飲食建議。</p>
+    </div>
+    <div class="feature">
+        <h3>可穿戴減肥設備</h3>
+        <img src="https://via.placeholder.com/300x200" alt="可穿戴設備" onload="this.setAttribute('data-loaded', 'true')">
+        <p>實時監測您的運動、睡眠及熱量消耗。</p>
+    </div>
+    <div class="feature">
+        <h3>智能減肥輔助食品</h3>
+        <img src="https://via.placeholder.com/300x200" alt="智能減肥輔助食品" onload="this.setAttribute('data-loaded', 'true')">
+        <p>天然成分，有效控制食慾，無副作用。</p>
+    </div>
+</section>
+
+<section id="feedback" class="testimonial">
+    <h2>使用者反饋</h2>
+    <div class="testimonial-item">
+        <img src="https://via.placeholder.com/150" alt="使用者1" onload="this.setAttribute('data-loaded', 'true')">
+        <p>"這款產品幫助我達成理想體重！"</p>
+        <p>- 李小姐</p>
+    </div>
+    <div class="testimonial-item">
+        <img src="https://via.placeholder.com/150" alt="使用者2" onload="this.setAttribute('data-loaded', 'true')">
+        <p>"穿戴設備讓我隨時掌握運動狀況，非常方便！"</p>
+        <p>- 王先生</p>
+    </div>
+    <div class="testimonial-item">
+        <img src="https://via.placeholder.com/150" alt="使用者3" onload="this.setAttribute('data-loaded', 'true')">
+        <p>"減肥不再是難題，這個平台提供實用工具！"</p>
+        <p>- 張女士</p>
+    </div>
+</section>
+
+<section id="cta" style="text-align: center; margin-top: 40px;">
+    <a href="#" class="cta-button">立即體驗</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 創新減肥產品App。所有權利保留。</p>
+</footer>
+
+</body>
+</html>
+
